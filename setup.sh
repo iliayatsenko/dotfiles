@@ -23,3 +23,5 @@ git config --global alias.st "status"
 git config --global alias.nb "checkout -b"
 git config --global alias.back "checkout -"
 git config --global alias.ch "checkout"
+
+git config --global credential.helper osxkeychain
