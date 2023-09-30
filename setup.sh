@@ -157,3 +157,7 @@ git config --global alias.ch "checkout"
 
 # Cache git credentials in Keychain app
 git config --global credential.helper osxkeychain
+
+
+# Useful CLI utils
+pip3 install shell-gpt
