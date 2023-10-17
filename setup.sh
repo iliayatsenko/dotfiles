@@ -148,9 +148,9 @@ ln -sf $(pwd)/RectangleConfig.json ~/Library/Application\ Support/Rectangle/Rect
 
 
 # Git aliases
-git config --global alias.cb "rev-parse --abbrev-ref HEAD"
+git config --global alias.cb "rev-parse --abbrev-ref HEAD" # current branch
 git config --global alias.st "status"
-git config --global alias.nb "checkout -b"
+git config --global alias.nb "checkout -b" # new branch
 git config --global alias.back "checkout -"
 git config --global alias.ch "checkout"
 
