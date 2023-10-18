@@ -155,6 +155,14 @@ git config --global alias.back "checkout -"
 git config --global alias.ch "checkout"
 
 
+# Create global .gitignore
+cat <<EOT >> ~/.config/git/ignore
+.gitignored
+.DS_Store
+.idea
+EOT
+
+
 # Cache git credentials in Keychain app
 git config --global credential.helper osxkeychain
 
