@@ -140,6 +140,7 @@ fi
 
 # 1. Karabiner
 mkdir -p ~/.config/karabiner
+[ -f ~/.config/karabiner/karabiner.json ] && cp ~/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json.back
 ln -sf $(pwd)/karabiner.json ~/.config/karabiner/karabiner.json
 
 # 2. Rectangle
