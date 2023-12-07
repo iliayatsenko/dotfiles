@@ -1487,7 +1487,7 @@
                   "key_code": "c",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1510,7 +1510,7 @@
                   "key_code": "t",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1533,7 +1533,7 @@
                   "key_code": "f",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1556,7 +1556,7 @@
                   "key_code": "s",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1579,7 +1579,7 @@
                   "key_code": "m",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1613,6 +1613,29 @@
                 ],
                 "type": "basic"
               },
+	      {
+                "conditions": [
+                  {
+                    "name": "spacefn_mode",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "w",
+                  "modifiers": {
+                    "mandatory": [
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open -a 'Google Chrome'"
+                  }
+                ],
+                "type": "basic"
+              },
               {
                 "conditions": [
                   {
@@ -1625,7 +1648,7 @@
                   "key_code": "n",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1648,7 +1671,7 @@
                   "key_code": "r",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1671,7 +1694,7 @@
                   "key_code": "p",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1694,7 +1717,7 @@
                   "key_code": "v",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
@@ -1717,13 +1740,13 @@
                   "key_code": "d",
                   "modifiers": {
                     "mandatory": [
-                      "any"
+                      "shift"
                     ]
                   }
                 },
                 "to": [
                   {
-                    "shell_command": "open -a 'Sequel Pro'"
+                    "shell_command": "open -a 'DataGrip'"
                   }
                 ],
                 "type": "basic"
