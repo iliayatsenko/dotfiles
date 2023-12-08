@@ -140,12 +140,17 @@ fi
 
 # 1. Karabiner
 mkdir -p ~/.config/karabiner
-[ -f ~/.config/karabiner/karabiner.json ] && cp ~/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json.back
+[ -f ~/.config/karabiner/karabiner.json ] && cp ~/.config/karabiner/karabiner.json ~/.config/karabiner/karabiner.json.$(date +"%Y-%m-%d_%H-%M-%S").back
 ln -sf $(pwd)/karabiner.json ~/.config/karabiner/karabiner.json
 
 # 2. Rectangle
 mkdir -p ~/Library/Application\ Support/Rectangle
 ln -sf $(pwd)/RectangleConfig.json ~/Library/Application\ Support/Rectangle/RectangleConfig.json
+
+
+# Link scripts:
+[ -d ~/scripts ] && cp -R ~/scripts ~/scripts.$(date +"%Y-%m-%d_%H-%M-%S").back
+ln -sf $(pwd)/scripts/* ~/scripts
 
 
 # Git aliases

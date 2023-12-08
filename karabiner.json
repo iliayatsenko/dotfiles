@@ -1613,7 +1613,7 @@
                 ],
                 "type": "basic"
               },
-	      {
+	            {
                 "conditions": [
                   {
                     "name": "spacefn_mode",
@@ -1659,7 +1659,7 @@
                 ],
                 "type": "basic"
               },
-	      {
+	            {
                 "conditions": [
                   {
                     "name": "spacefn_mode",
@@ -1750,10 +1750,8 @@
                   }
                 ],
                 "type": "basic"
-              }
-            ]
-          },
-          {
+              },
+              {
                 "conditions": [
                   {
                     "name": "spacefn_mode",
@@ -1772,6 +1770,29 @@
                 "to": [
                   {
                     "shell_command": "open -a 'Simulator'"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "conditions": [
+                  {
+                    "name": "spacefn_mode",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "from": {
+                  "key_code": "a",
+                  "modifiers": {
+                    "mandatory": [
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "osascript ~/scripts/android-emulator.scpt"
                   }
                 ],
                 "type": "basic"
