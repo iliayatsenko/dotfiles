@@ -162,7 +162,7 @@ git config --global alias.ch "checkout"
 
 
 # Create global .gitignore
-cat <<EOT >> ~/.config/git/ignore
+cat <<EOT > ~/.config/git/ignore
 .gitignored
 .DS_Store
 .idea
