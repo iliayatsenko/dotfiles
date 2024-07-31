@@ -166,6 +166,7 @@ cat <<EOT > ~/.config/git/ignore
 .gitignored
 .DS_Store
 .idea
+.vscode
 EOT
 
 
@@ -175,3 +176,7 @@ git config --global credential.helper osxkeychain
 
 # Useful CLI utils
 pip3 install shell-gpt
+
+# Show Cmd+Tab pane on all displays
+defaults write com.apple.dock appswitcher-all-displays -bool true
+killall Dock
